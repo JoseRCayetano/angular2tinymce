@@ -1,0 +1,13 @@
+<p>
+  pantalla works!
+</p>
+<app-tinymce [elementId]="'my-editor-id'"
+              [valor]="myForm.get('rich').value"
+              (onEditorKeyup)="mostrar($event)">
+</app-tinymce>
+<button type="button" (click)="cambiarValor()">Cambiar valor</button>
+<button type="button" (click)="mostrarValueForm()">Mostrar Value form</button>
+
+
+
+
